@@ -19,3 +19,19 @@ createInertiaApp({
         color: '#4B5563',
     },
 });
+
+import React from 'react'
+import Cards from './Pages/Cards';
+import Navbar from './Pages/Navbar';
+
+const app = () => {
+  return (
+    <div>
+        <Navbar />
+        <Cards />
+    </div>
+  )
+}
+
+export default app
+
