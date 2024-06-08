@@ -18,6 +18,18 @@ Route::get('/', function() {
     return Inertia::render('Home');
 });
 
+Route::get('/admin', function() {
+    return Inertia::render('Admin');
+});
+
+Route::get('/signin', function() {
+    return Inertia::render('Login');
+});
+
+Route::get('/signup', function() {
+    return Inertia::render('Register');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

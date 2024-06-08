@@ -5,7 +5,7 @@ import Cards from '@/Pages/Cards';
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar content={["Makanan", "Minuman", "Pesanan"]} />
       <Cards />
     </div>
   );

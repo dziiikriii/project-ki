@@ -29,17 +29,17 @@ const Card = ({foto, nama, harga}) => {
 				</motion.div>
 			</motion.div>
 			<div className="flex gap-4">
-				<button className="w-1/4 h-12 bg-blue-200 rounded-md" onClick={minus}>
+				<button className="w-1/4 h-12 bg-red-500 text-white font-bold rounded-md" onClick={minus}>
 					-
 				</button>
 				<input
 					type="number"
-					className="w-1/2 h-12 bg-red-400 rounded-md flex items-center justify-center text-center text-white"
+					className="w-1/2 h-12 bg-slate-200 rounded-md flex items-center justify-center text-center border-none"
 					value={value}
 					onChange={(e) => setValue(parseInt(e.target.value))}
 					min={0}
 				/>
-				<button className="w-1/4 bg-blue-200 rounded-md" onClick={plus}>
+				<button className="w-1/4 bg-blue-500 text-white font-bold rounded-md" onClick={plus}>
 					+
 				</button>
 			</div>

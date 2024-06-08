@@ -42,7 +42,7 @@ const Cards = () => {
 	];
 
 	return (
-		<div className="grid grid-cols-3 gap-y-12 place-items-center p-12">
+		<div className="grid grid-cols-4 gap-y-12 place-items-center p-12">
 			{items.map((item, index) => (
 				<Card
 					key={index} // Important for performance optimization

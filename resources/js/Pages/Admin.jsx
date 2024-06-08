@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Cards from '../components/Cards'
+import Navbar from '../Pages/Navbar'
+import Cards from '../Pages/Cards'
 
 const Admin = () => {
   return (

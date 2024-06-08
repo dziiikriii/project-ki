@@ -9,16 +9,17 @@ const Login = () => {
         <p className='text-slate-600'>Welcome to website! Please sign in first</p>
 
         <div className='relative flex flex-row items-center border-b-2 mt-10'>
-            <input type="text" placeholder='Username' className='pl-10 pr-3 py-2 w-96 focus:outline-none'/>
+            <input type="email" placeholder='Email' className='pl-10 pr-3 py-2 w-96 focus:outline-none border-none bg-transparent'/>
             <img src={person} alt="person" className='size-6 absolute ml-2'/>
         </div>
 
         <div className='relative flex flex-row items-center border-b-2'>
-            <input type="password" placeholder='Password' className='pl-10 pr-3 py-2 w-96 focus:outline-none'/>
+            <input type="password" placeholder='Password' className='pl-10 pr-3 py-2 w-96 focus:outline-none border-none'/>
             <img src={lock} alt="lock" className='size-6 absolute ml-2'/>
         </div>
+        <p>Don't have an account? <a href="#" className='font-bold'>Register Now</a></p>
 
-        <button className='bg-slate-500 font-semibold w-52 h-12 rounded-md text-white mt-10'>Sign In</button>
+        <button className='bg-slate-500 font-semibold w-52 h-12 rounded-md text-white'>Sign In</button>
     </div>
   )
 }
